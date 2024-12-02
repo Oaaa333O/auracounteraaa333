@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur d'Aura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compteur d'Aura</h1>
+        <div id="formulaire">
+            <button onclick="demanderAuraNom()">Choisir une aura et un nom</button>
+        </div>
+
+        <div id="selectionUtilisateur" class="hidden">
+            <label for="utilisateurSelect">Sélectionner un utilisateur :</label>
+            <select id="utilisateurSelect" onchange="afficherAuraUtilisateur()">
+                <option value="">-- Choisir un utilisateur --</option>
+            </select>
+        </div>
+
+        <div id="actions" class="hidden">
+            <h3 id="nomUtilisateur">Aura de : </h3>
+            <p id="affichageAura">Aura : 0</p>
+            <button onclick="modifierAura(100)">+100</button>
+            <button onclick="modifierAura(1000)">+1000</button>
+            <button onclick="modifierAura(2000)">+2000</button>
+            <button onclick="modifierAura(5000)">+5000</button>
+            <button onclick="modifierAura(10000)">+10000</button>
+            <button onclick="modifierAura(-100)">-100</button>
+            <button onclick="modifierAura(-1000)">-1000</button>
+            <button onclick="modifierAura(-2000)">-2000</button>
+            <button onclick="modifierAura(-5000)">-5000</button>
+            <button onclick="modifierAura(-10000)">-10000</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
